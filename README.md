@@ -6,7 +6,7 @@ The base concepts for these scripts were learned in cybersecurity courses from *
 
 ## Tools Included
 
-### 1. Web Crawler (`crawler.py`)
+### 1. Web Crawler (`web_crawler2.py`)
 
 A multi-threaded web crawler designed to quickly and efficiently map all accessible URLs within a specific target domain.
 
@@ -14,10 +14,10 @@ A multi-threaded web crawler designed to quickly and efficiently map all accessi
 * **Enhanced Version:** The version in this repository is a significant upgrade from the original concept, including multithreading for high performance, scope control to prevent crawling external sites, and a professional command-line interface.
 * **Basic Usage:**
     ```
-    python3 crawler.py -u <seed_url> -t <threads> -o <output_file>
+    python3 web_crawler2.py <seed_url> -t <threads> -o <output_file>
     ```
 
-### 2. Secret Finder (`secret_finder.py`)
+### 2. Secret Finder (`email_finder2.py`)
 
 An advanced crawler that goes beyond just finding links. It uses a regex-based pattern engine to hunt for "secrets" and sensitive information within the content of pages, JavaScript files, and more.
 
@@ -25,7 +25,7 @@ An advanced crawler that goes beyond just finding links. It uses a regex-based p
 * **Enhanced Version:** This tool evolved from a simple email finder into a secret-hunting framework. Enhancements include a pattern engine that loads from JSON files, crawl depth control, and a final categorized report.
 * **Basic Usage:**
     ```
-    python3 secret_finder.py -u <seed_url> -p <patterns_directory> -d <depth> -o <output_file>
+    python3 email_finder2.py -u <seed_url> -p <patterns_directory> -d <depth> -o <output_file>
     ```
 
 ## License
